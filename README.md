@@ -1,3 +1,5 @@
+you can see this project on : https://graphql-daibou.vercel.app/
+
 # GraphQL Profile Page Project
 
 ## Objectives
