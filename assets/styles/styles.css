@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "IBM Plex Mono Bold";
+  src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono Light";
+  src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Semi Bold";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #141d26;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+/* ********* Login Page ********* */
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(228, 227, 227, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 0 12px 3px rgba(63, 61, 61, 0.3);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 50px;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  font-family: "IBM Plex Mono Bold";
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-family: "IBM Plex Mono Light";
+  font-size: 14px;
+  color: #000;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #00d4a1;
+  font-family: "IBM Plex Mono Bold";
+}
+
+.login-box form .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box form .submit button {
+  cursor: pointer;
+  padding: 10px 50px;
+  background: #00d4a1;
+  color: #000;
+  font-family: "IBM Plex Mono Bold";
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 30px;
+  letter-spacing: 4px;
+  border-radius: 10px;
+}
+
+.login-box form .submit button:hover {
+  font-size: 18px;
+  padding: 10px 60px;
+  box-shadow: 0 0 2px #00d4a1, 0 0 3px #00d4a1, 0 0 7px #00d4a1,
+    0 0 10px #00d4a1;
+}
+
+
+/* ********* Profile Page ********** */
+.profile {
+  color: #fdfbfb;
+}
+
+.profile header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.profile header h2 {
+  font-family: "IBM Plex Mono Light";
+}
+
+.profile header a span {
+  display:  flexbox;
+  color: #fbfafd;
+  cursor: pointer;
+}
+
+.profile .createdAt {
+  display: flex;
+  justify-content: center;
+  font-family: "IBM Plex Mono Light";
+  margin: 20px 0 50px;
+}
+
+.profile #createdAt {
+  margin-left: 5px;
+  font-weight: 600;
+  color: #fafafc;
+}
+
+.profile .divAndAudits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.profile .divAndAudits .div01 {
+  width: 50%;
+  border-right: 1px solid rgb(2, 2, 2);
+  text-align: center;
+}
+
+.profile .divAndAudits .audits {
+  width: 50%;
+  text-align: center;
+}
+
+.profile .divAndAudits h3 {
+  font-family: "IBM Plex Mono Bold";
+  padding: 10px 0;
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fcfbfd;
+}
+
+.profile .divAndAudits p {
+  font-family: "IBM Plex Mono Light";
+}
+
+.profile .projectsDone {
+  margin: 50px 0;
+  text-align: center;
+  border: 1px solid rgb(3, 3, 3);
+}
+
+.profile .projectsDone h3 {
+  font-family: "IBM Plex Mono Bold";
+  margin-top: 0;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fdfcfd;
+}
+
+.profile .projectsDone p {
+  font-family: "IBM Plex Mono Light";
+}
+
+
+.profile .graph-title {
+  text-align: center;
+  margin: 70px 0 20px;
+  font-family: "IBM Plex Mono Bold";
+  color: #fcfafa;
+}
+
+.profile #graph {
+  display: flex;
+  background: #141d26;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+
+.profile #ratioGraph {
+  background-color: #141d26;
+}
+
+.profile #ratioGraph p {
+  font-family: "IBM Plex Mono Bold";
+  padding: 20px;
+  color: #9969ff;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>ZONE01</title>
+  </head>
+  <body>
+    <main class="profile">
+      <header>
+        <h2>
+          Welcome <span id="userLastName"></span>
+          <span id="userFirstName"></span>!
+        </h2>
+        <a id="logoutButton" alt="logout"
+          ><span class="material-symbols-outlined"> logout </span></a
+        >
+      </header>
+      <p class="createdAt">
+        You joined zone01 since <span id="createdAt"></span>
+      </p>
+
+      <div class="divAndAudits">
+        <!-- Div-01 data -->
+        <div class="div01">
+          <h3>Statistics</h3>
+          <p>XP: <span id="xpDiv01Amount"></span> kB</p>
+          <p>Level: <span id="div01Level"></span></p>
+        </div>
+
+        <!-- Audits data -->
+        <div class="audits">
+          <h3>Audits</h3>
+          <p>Audit done : <span id="auditDone"></span> kB</p>
+          <p>Audit received : <span id="auditReceived"></span> kB</p>
+        </div>
+      </div>
+
+      <!-- Projects done -->
+      <div class="projectsDone">
+        <h3>Projects</h3>
+        <p>You've validated <span id="projects"></span> projects</p>
+      </div>
+
+      <!-- Graphs -->
+        <div> <h2 class="graph-title">XP Earned by Project </h2></div>
+        <div id="graph">
+          
+        </div>
+        <div id="ratioGraph">
+        <div style="text-align: center;margin: 70px 0 20px;"><h2>Audit Ratio : <span id="auditRatio"></span></h2></div>
+        
+      </div>
+    </main>
+    <script type="module" src="./assets/scripts/profile.js"></script>
+  </body>
+</html>
